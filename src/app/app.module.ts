@@ -11,6 +11,7 @@ import { WebRequestInterceptorService } from './services/web-request-interceptor
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { EditListComponent } from './pages/edit-list/edit-list.component';
 import { EditTaskComponent } from './pages/edit-task/edit-task.component';
+import { WrongComponent } from './pages/wrong/wrong.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EditTaskComponent } from './pages/edit-task/edit-task.component';
     LoginPageComponent,
     SignupPageComponent,
     EditListComponent,
-    EditTaskComponent
+    EditTaskComponent,
+    WrongComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,6 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class WebRequestInterceptorService {
-  message:string="aze"
 
   constructor(private authService: AuthService, private router:Router) {}
 
@@ -49,8 +48,7 @@ export class WebRequestInterceptorService {
             )
         }
         if (error.status === 400) {
-          this.message = "Wrong or unavailable credentials"
-          console.log(this.message)
+          this.router.navigate(['/wrong'])
         }
         return throwError(error);
       })
