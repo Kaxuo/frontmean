@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import { HttpResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { WebRequestInterceptorService } from '../../services/web-request-interceptor.service'
+
 
 @Component({
   selector: 'app-signup-page',
@@ -11,7 +11,7 @@ import { WebRequestInterceptorService } from '../../services/web-request-interce
 })
 export class SignupPageComponent implements OnInit {
 
-  constructor(private authService: AuthService, private router:Router, private message : WebRequestInterceptorService) { }
+  constructor(private authService: AuthService, private router:Router) { }
 
   ngOnInit(): void {
     if (localStorage.getItem("x-access-token")){

@@ -12,6 +12,7 @@ import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 import { EditListComponent } from './pages/edit-list/edit-list.component';
 import { EditTaskComponent } from './pages/edit-task/edit-task.component';
 import { WrongComponent } from './pages/wrong/wrong.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { WrongComponent } from './pages/wrong/wrong.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     {
